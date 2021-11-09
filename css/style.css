@@ -67,6 +67,7 @@ justify-self:center;
 
 .design a:link{ /* LÄnken i texten över bilden */
   background-color: black;
+  color: white;
   padding: 15px 32px;
   border-radius: 8px; /* Länkens bakgrund är lite rundad i kanterna*/
 }
@@ -118,6 +119,12 @@ justify-self:center;
   text-align: center;
   align-self: center;
   padding: 14px 25px;
+}
+
+.länk a:link{
+  color: white;
+  background-color: black;
+  border-radius: 8px; /* Menyns bakgrund blir rundad i kanterna */
 }
 
 .länk a:hover, a:active{ /* Länkar i menyn till seasons och characters */
