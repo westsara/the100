@@ -1,0 +1,155 @@
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: minmax(40px auto);
+}
+
+/*Navigation bar*/
+
+/* H1 - bild på loggan*/
+#logga{
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+
+/*navigationbar*/
+#home, #seasons, #characters, #streaming{
+  grid-row:2/3;
+}
+
+#home{
+  grid-column:1/2;
+}
+
+#seasons{
+  grid-column:2/3;
+}
+
+#characters{
+  grid-column:3/4;
+}
+
+#streaming{
+  grid-column:4/5;
+}
+
+/* Startsida */
+
+/* Bild med text*/
+#signaturbild{
+  grid-column: 1/-1;
+  grid-row: 3/4;
+}
+
+.textpåbild{
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+
+/* Reviewer med tillhörande bilder */
+.review1{
+  grid-column: 1/3;
+  grid-row: 4/5;
+}
+
+.image1{
+  grid-column: 3/5;
+  grid-row: 4/5;
+}
+
+.review2{
+  grid-column: 3/5;
+  grid-row: 5/6;
+}
+
+.image2{
+  grid-column: 1/3;
+  grid-row: 5/6;
+}
+
+/* Bild på netflix med tillhörande länk */
+.streaming{
+  grid-column: 3/6;
+  grid-row: 6/7;
+}
+
+.image3{
+  grid-column: 1/3;
+  grid-row: 6/7;
+}
+
+/* Sista bilden */
+.lastimage{
+  grid-column: 1/-1;
+  grid-row: 7/8;
+}
+
+/* Teaser - seasons / Character */
+h1.teaser{
+  grid-row: 3/4;
+}
+
+h2.teaser{
+  grid-row: 3/4;
+}
+
+.teaser{
+  grid-column: 2/-1;
+  grid-row: 4/5;
+}
+
+/* Säsong och karaktär meny */
+.seasons, .characters{
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+/* Bilder med tillhörande info */
+.teaser, .left, .right{
+  grid-column: 2/5;
+}
+
+
+@media only screen and (max-width: 480px) { /* För mobil */
+/* Startsidan */
+  .textpåbild{
+    grid-column:1/4;
+  }
+
+  .image1, .image2, .image3, .review1, .review2, .streaming{
+    grid-column:1/-1;
+  }
+
+  .image1{
+    grid-row: 4/5;
+  }
+
+  .image2{
+    grid-row: 6/7;
+  }
+
+  .image3{
+    grid-row: 8/9;
+  }
+
+  .review1{
+    grid-row: 5/6;
+  }
+
+  .review2{
+    grid-row: 7/8;
+  }
+
+  .streaming{
+    grid-row: 9/10;
+  }
+
+  .lastimage{
+    grid-row: 10/11;
+  }
+
+/* Seasons / Characters */
+  .seasons, .characters{
+    grid-row: 4/6;
+  }
+}
