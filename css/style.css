@@ -73,7 +73,7 @@ margin-bottom: 2%;
 .design a:link{ /* Länken i texten över bilden */
   background-color: black;
   color: white;
-  padding: 3% 10%;
+  padding: 3%;
   border-radius: 5%; /* Länkens bakgrund är lite rundad i kanterna*/
 }
 
@@ -165,7 +165,7 @@ margin-bottom: 2%;
   }
 
   .review2, .image2{
-    margin-bottom: 50px;
+    margin-bottom: 10%;
   }
 
   .review1{
