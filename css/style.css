@@ -1,9 +1,12 @@
 body{
-  margin: 0;
-  padding: 0;
-  font-size: 30px;
+  font-size: 190%;
   font-family: 'Kanit', sans-serif;
   background-color: rgb(52, 94, 63);
+}
+
+*{
+  margin: 0;
+  padding: 0;
 }
 
 /* Alla listor */
@@ -19,6 +22,7 @@ a:link{
 /* H1 - bild på loggan*/
 #logga{
 justify-self:center;
+margin-bottom: 2%;
 }
 
 /*Navigationbar*/
@@ -27,49 +31,50 @@ justify-self:center;
   align-items: center;
   position: sticky;/* Menyn kommer att följa med när man scrollar förbi menyn*/
   top: 0;
-  font-size: 30px;
+  font-size: 100%;
   font-weight:normal;
 }
 
 /* Style på länkar (färg, storlek)*/
-.länkdesign a:link, a:visited {
+.lankdesign a:link, a:visited {
   color: white;
-  padding:14px 25px;
+  padding:5% 8%;
   text-align: center;
   display: inline-block;
 }
 
 /* Ändrar färg när du håller musen över länken*/
-.länkdesign a:hover, a:active {
+.lankdesign a:hover, a:active {
   background-color: black;
-  padding:14px 25px;
-  border-radius: 15px; /* Länkens kanter blir rundade*/
+  padding:5% 8%;
+  border-radius: 20%; /* Länkens kanter blir rundade*/
 }
 
 /* Bild med kort info om serien över*/
 #signaturbild{
   width: 100%;
-  margin-top: -30px;
+  margin-top: -5%;
 }
 
-.textpåbild{
+.textpabild{
   font-weight: bold; /* Texten är i fetstil*/
   color: black;
-  justify-self:center;
+  justify-self: center;
 }
 
 .infolist{ /* Lista med info över bild */
   background: rgba(255, 255, 255, 0.5); /* Bakgrunden är genomskinlig men inte texten*/
-  border-radius: 8px; /* Textens bakgrund är lite rundad i kanterna*/
+  border-radius: 5%; /* Textens bakgrund är lite rundad i kanterna*/
   text-align: center;
-  padding: 10px 0px 10px 0px;
+  margin: 10% 0% 6% 0%;
+  padding:15px 50px;
 }
 
-.design a:link{ /* LÄnken i texten över bilden */
+.design a:link{ /* Länken i texten över bilden */
   background-color: black;
   color: white;
-  padding: 15px 32px;
-  border-radius: 8px; /* Länkens bakgrund är lite rundad i kanterna*/
+  padding: 3% 10%;
+  border-radius: 5%; /* Länkens bakgrund är lite rundad i kanterna*/
 }
 
 .design a:hover, a:active{ /* Länken i texten över bilden *//* Länkens bakgrund blir grön när man håller musen över den*/
@@ -84,18 +89,22 @@ justify-self:center;
 }
 
 .review1, .image1{
-  margin-top: 150px;
+  margin-top: 25%;
 }
 
 .review2, .image2{
-  margin-bottom: 150px;
+  margin-bottom: 25%;
 }
 
 .review1, .review2, .streaming{
   text-align: center;
   align-self: center;
-  padding: 10px;
+  padding: 8%;
   font-weight: bold;
+}
+
+.streamingtext{
+  margin-bottom:5%;
 }
 
 .image3{
@@ -105,57 +114,66 @@ justify-self:center;
 
 .lastimage{
   width:100%;
-  margin-top: 150px;
+  margin-top: 15%;
 }
 
 /* Teaser/Seasons / Characters*/
 
 .seasons, .characters{
   background-color: black;
-  border-radius: 8px; /* Menyns bakgrund blir rundad i kanterna */
+  border-radius: 8%; /* Menyns bakgrund blir rundad i kanterna */
   position: sticky;/* Menyn kommer att följa med när man scrollar förbi menyn*/
-  top: 100px;
+  top: 10%;
   justify-self: center;
   text-align: center;
   align-self: center;
-  padding: 14px 25px;
+  padding: 5% 8%;
 }
 
-.länk a:link{
+.lank a:link{
   color: white;
   background-color: black;
-  border-radius: 8px; /* Menyns bakgrund blir rundad i kanterna */
+  border-radius: 8%; /* Menyns bakgrund blir rundad i kanterna */
 }
 
-.länk a:hover, a:active{ /* Länkar i menyn till seasons och characters */
+.lank a:hover, a:active{ /* Länkar i menyn till seasons och characters */
   background-color: rgb(35, 47, 32);
-  border-radius: 8px; /* Menyns bakgrund blir rundad i kanterna */
+  border-radius: 8%; /* Menyns bakgrund blir rundad i kanterna */
   justify-self: center;
+}
+
+.title{
+  margin-top:5%;
 }
 
 .left{
   width: 70%;
+  margin: 5% 0% 5% 0%;
 }
 
 @media only screen and (max-width: 480px) {/* FÖr mobil */
   *{
-    font-size: 20px;
+    font-size: 89%;
   }
 
   #signaturbild{
-    height: 320px;
+    height: 120%;
   }
 
-  .review1, .image1, .lastimage{
-    margin-top: 50px;
+  .image1, .lastimage{
+    margin-top: 20%;
   }
 
   .review2, .image2{
     margin-bottom: 50px;
   }
 
-  h1.teaser{
-    font-size: 30px;
+  .review1{
+    margin:5% 0%;
+  }
+
+  h1.title{
+    font-size: 150%;
   }
 
   .left{
@@ -167,6 +185,6 @@ justify-self:center;
   }
 
   .seasons, .characters{
-    margin-right: 10px;
+    margin-right: 5%;
   }
 }
