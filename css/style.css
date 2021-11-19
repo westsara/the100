@@ -83,13 +83,27 @@ margin-bottom: 2%;
 
 
 /* Bildstorlekar och mellanrum mellan reviewerna och bilderna*/
+.home{
+  justify-self: center;
+  font-weight: bold;
+}
+
+h1.home{
+  align-self:end;
+  font-size: 250%;
+}
+
+.review{
+  margin-top: 25%
+}
+
 .image1, .image2{
   width: 95%;
   justify-self: center;
 }
 
 .review1, .image1{
-  margin-top: 25%;
+  margin-top: 5%;
 }
 
 .review2, .image2{
@@ -160,8 +174,12 @@ margin-bottom: 2%;
     height: 120%;
   }
 
+  .design a:link{
+    padding: 3% 10%;
+  }
+
   .image1, .lastimage{
-    margin-top: 20%;
+    margin-top: 10%;
   }
 
   .review2, .image2{
@@ -172,8 +190,17 @@ margin-bottom: 2%;
     margin:5% 0%;
   }
 
-  h1.title{
+  h1{
     font-size: 150%;
+  }
+
+  h1.home{
+    margin: 5% 0%;
+    font-size:175%;
+  }
+
+  .home{
+    font-size:150%
   }
 
   .left{
